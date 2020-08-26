@@ -1,0 +1,133 @@
+@media only screen and (max-width:1582px){
+    .grids-layuot{
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:auto;
+    }
+    .skill{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:1130px){
+    .proflie{
+        height: 800px;
+        grid-template-columns:repeat(1,2fr);
+        grid-template-areas: 
+        "about"
+        "education";
+        
+      
+    }
+    .proflie .about{
+        border-right: 0;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width:960px){
+    #btn-respon{
+        display: block;
+    }
+    .nav nav{
+        position: relative;
+        height: 100vh;
+        flex-direction: column;
+        background:rgba(0, 0, 0, 1);
+        left: -100%;
+        transition: .5s;
+        text-align: center;
+    }
+    .nav .show_nav{
+        display: flex;
+        left: 0%;
+        transition: 1s;
+    }
+    #btn-contact{
+        position: relative;
+        right: 0;
+        margin-top:10px;
+    }
+    #btn-logo{
+        display: none;
+    }
+    .nav nav ul,.nav nav ul i{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:955px){
+    .grids-layuot{
+        height: 100%;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows:auto;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .Project{
+        grid-template-columns: repeat(1,1fr) ;
+        height: 100%;
+        grid-gap: 20px;
+    }
+    .Project .Project-link{
+        border-right: none;
+    }
+    .Project .hobbies{
+        padding: 20px;
+       
+    }
+}
+@media only screen and (max-width:645px){
+    .grids-layuot{
+        height: 100%;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows:auto;
+    }
+    .contacts{
+        height: 100%;
+
+    }
+    .contacts .layout_S h3{
+        font-size: 1rem;
+    }
+    .contacts h1{
+        font-size: 1.5rem;
+    }
+    .contacts .layout_S > .head,.text{
+        margin: 2px;
+        
+    }
+    
+}
+@media only screen and (max-width:585px){
+    #span1 ,#span2,#span3{
+      display: none;
+        
+    }
+
+    .proflie  .education{
+        padding: 0 50px;
+    }
+    .proflie .about h1 , .proflie .about h1 i,.education h1 ,.education h1 i{
+        font-size: 1.8rem;
+    }
+    #home h1,#home h3{
+        font-size:2rem
+    }
+}
+@media only screen and (max-width:372px){
+    #home h1,#home h3{
+        font-size:1.5rem
+    }
+    
+}
+@media only screen and (max-width:350px){
+    .Project .Project-link .text-content a{
+        width: 100px;
+        height: 100px;
+    }
+ 
+    .Project .Project-link h1,.Project .hobbies h1{
+        font-size: 2rem;
+    }
+}

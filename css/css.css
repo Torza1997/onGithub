@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+.home {
+    position: relative;
+    background:url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.home .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+}
+.nav{
+    position: fixed;
+    z-index: 3;
+    color: #FFF;
+    width: 100%;
+    height: 70px;
+    font-size: 1.3rem;
+    align-items: center;
+}
+.nav nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.nav nav ul {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+.nav nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+}
+#btn-contact{
+    position: absolute;
+    right: 10%;
+    background: #ffae00;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+}
+#btn-respon{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+}
+#btn-logo{
+    position: absolute;
+    left: 10%;
+}
+.nav nav ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+#btn-respon{
+    display: none;
+    position: absolute;
+    right: 5%;
+}
+/**********************home******************************/
+.home .text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    z-index: 2;
+    text-transform: uppercase;
+}
+.home .text-content  h1 , h3{
+    margin-bottom:20px;
+   
+}
+.home .text-content h1{
+    font-size: 3rem;
+}
+.home .text-content h3{
+    font-size: 2rem;
+}
+.home .text-content a{
+    background: #ffae00;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+.home .text-content span{
+    color:#ffae00;
+}
+/********************proflie************************/
+.about{
+    grid-area: "about";
+}
+.education{
+    grid-area: "education";
+}
+.proflie{
+    width: 100%;
+    height: 50vh;
+    background:rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "about education";
+    padding: 50px 0;
+}
+.proflie .about , .education{
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0);
+    color: #FFF;
+} 
+.proflie .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid #ffae00;
+    
+}
+.proflie i{
+    color: #ffae00;
+}
+.proflie .about .content span{
+    color: #ffae00;
+}
+.proflie .about p,h1{
+    margin-bottom: 10px;
+}
+#span1 ,#span2,#span3{
+    width:400px;
+    height: 400px;
+    position: absolute;
+    border:2px solid #ffae00;
+}
+.proflie .about #span1{
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    animation: 6s animate0-360 linear infinite;
+}
+.proflie .about #span2{
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    animation: 4s animate0-360 linear infinite;
+}
+.proflie .about #span3{
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    animation: 6s animate360-0 linear infinite;
+}
+@keyframes animate0-360{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate360-0{
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.proflie .education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proflie .education .content h1{
+    text-align: center;
+}
+.proflie .education .content .flexs{
+    display: flex;
+}
+.proflie .education .content .flexs .year{
+    color: #ffae00;
+}
+.proflie .education .content .flexs .school{
+    margin-left: 10px ;
+    border-left:2px solid #ffae00;
+    padding: 0 10px;
+}
+/********************skill****************************/
+.skill{
+    width: 100%;
+    height: 50vh;
+    background-color: #ffae00;
+    padding: 35px 0;
+    display: grid;
+    justify-content: center;
+}
+.skill #head{
+    text-align:center ;
+}
+.grids-layuot{
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows:repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    color:#FFF;
+   
+}
+.grids-layuot .content{
+    width: 300px;
+    height: 170px;
+    background: #000;
+    border-radius:10px;
+    padding: 15px 20px;
+    transform-style: preserve-3d
+}
+.grids-layuot .content .layout{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(50px);
+}
+.grids-layuot .content .layout .progress p{
+    position: absolute;
+    color: #000;
+}
+.grids-layuot .content .layout .progress{
+    margin-bottom: 10px;
+}
+.grids-layuot div h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(50px);
+}
+.grids-layuot ul{
+    list-style: none;
+    border-left: 2px solid #ffae00 ;
+    
+}
+.grids-layuot li{
+  position: relative;
+  left: 10px;
+}
+/*****************Project*****************/
+.Project{
+    width: 100%;
+    height: 50vh;
+    background: #000;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    padding: 50px 0;
+}
+.Project .Project-link,.Project .hobbies{
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+.Project .Project-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 5px solid #ffae00;
+
+}.Project .Project-link h1{
+    margin-bottom:20px;
+
+}
+.Project .Project-link .fa-file-code{
+    color: #ffae00;
+}
+.Project .Project-link .text-content{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 20px;
+}
+.Project .Project-link .text-content a{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background:#ffae00;
+    font-size: 3rem;text-decoration: none;
+    color: #000;
+    border-radius: 20px;
+
+}
+.Project .Project-link .text-content a:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.Project .hobbies i{
+    color: #ffae00;
+}
+.Project .hobbies h1{
+    margin-bottom:10px ;
+}
+.Project .hobbies{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Project .hobbies ul{
+    list-style: none;
+    font-size: 2rem;
+}
+/*******************contacts********************/
+.contacts{
+    width: 100%;
+    height: 35vh;
+    background: #ffae00;
+    color: rgb(31, 31, 31);
+    padding: 20px;
+    
+}.contacts .fa-id-card-alt{
+    color: #FFF;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contacts .layout_S{
+    display: flex; 
+}
+.contacts .layout_S a{
+    text-decoration: none;
+    color: #000;
+}
+.contacts .layout_S > .head,.text{
+    margin: 20px;
+    
+}
+.contacts .layout_S > .head{
+    color: #FFF;
+}
+.contacts .layout_S > .head i{
+    color: #000;
+}
+/***********foot********/
+.foot{
+    width: 100%;
+    height:75px;
+    background: #000;
+}
