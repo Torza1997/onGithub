@@ -114,6 +114,13 @@
     #home h1,#home h3{
         font-size:2rem
     }
+    .proflie .about .content{
+        width: 100%;
+        padding: 50px;
+    }
+    .proflie .about .content h1{
+        text-align: center;
+    }
 }
 @media only screen and (max-width:372px){
     #home h1,#home h3{
