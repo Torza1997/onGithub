@@ -281,7 +281,7 @@ body{
 /*****************Project*****************/
 .Project{
     width: 100%;
-    height: 50vh;
+    height: 500px;
     background: #000;
     display: grid;
     grid-template-columns: repeat(2,1fr) ;
@@ -347,7 +347,7 @@ body{
 /*******************contacts********************/
 .contacts{
     width: 100%;
-    height: 35vh;
+    height: 380px;
     background: #ffae00;
     color: rgb(31, 31, 31);
     padding: 20px;
