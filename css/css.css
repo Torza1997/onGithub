@@ -32,6 +32,7 @@ body{
     height: 70px;
     font-size: 1.3rem;
     align-items: center;
+    background: rgba(0,0,0,0.3);
 }
 .nav nav{
     display: flex;
