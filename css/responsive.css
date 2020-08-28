@@ -39,7 +39,7 @@
     .nav .show_nav{
         display: flex;
         left: 0%;
-        transition: 1s;
+        transition: .5s;
     }
     #btn-contact{
         position: relative;
