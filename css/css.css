@@ -217,7 +217,7 @@ body{
 /********************skill****************************/
 .skill{
     width: 100%;
-    height: 75vh;
+    height: 680px;
     background-color: #ffae00;
     padding: 35px 0;
     display: grid;
