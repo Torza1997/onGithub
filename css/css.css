@@ -379,6 +379,9 @@ body{
 .contacts .layout_S > .head i{
     color: #000;
 }
+.contacts .layout_S .text a:hover{
+    color: #FFF;
+}
 /***********foot********/
 .foot{
     width: 100%;
